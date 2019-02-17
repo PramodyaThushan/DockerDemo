@@ -31,6 +31,11 @@ public class DockerController {
 		return "get method";
 	}
 	
+	@RequestMapping(value="/update1",method=RequestMethod.GET)
+	public String updateTestMethod1() {
+		return "get method";
+	}
+	
 	@RequestMapping(value="/user-info",method=RequestMethod.POST)
 	public ResponseEntity<?> afterMethod(@RequestBody User reqUser){
 		
